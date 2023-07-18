@@ -1,6 +1,231 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Open+Sans:wght@300;400;700;800&family=Space+Mono:wght@700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* shared styles */
+.primary-pink {
+    color: #FF42A5;
+}
+
+/* navigation bar styles */
+.header-section {
+height: 130px;
+max-width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+    background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    margin-left: 200px;
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 86.041px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.logo h1 {
+    font-family: Work Sans;
+    font-size: 2.8rem;
+    font-weight 700;
+}
+
+.menus {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
+    margin-right: 200px;
+}
+
+.menus li {
+    list-style: none;
+    color: #3C354F;
+    font-family: Work Sans;
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+
+.follow-us {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 15px;
+}
+
+.follow-us p {
+    color: #3C354F;
+    font-family: Work Sans;
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+
+.you-tube {
+    width: 33.916px;
+    height: 24px;
+    text-align: center;
+    fill: #F61C0D;
+}
+
+.tiktok {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* Banner Section */
+.banner-section{
+    width: 100%;
+    height: 90vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-1 {
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    border: none;
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.btn-2 {
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: #4EC5F7;
+    border: none;
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    color: #0B0223;
+font-family: Work Sans;
+font-size: 3rem;
+font-weight: 600;
+text-transform: uppercase;
+}
+.goat-part h1{
+font-family: Work Sans;
+font-size:5.9rem;
+font-weight: 800;
+text-transform: uppercase;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.goat-part p{
+    color: #534C64;
+font-family: Work Sans;
+font-size: 1.25rem;
+font-weight: 500;
+text-transform: lowercase;
+margin-bottom: 18px;
+display: flex;
+align-items: center; 
+gap: 10px;
+}
+/* Gamers section */
+.gamer-section{
+    width: 90%;
+    margin: 0 auto;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.we-are-gamer{
+    text-align: right;
+    display: block;
+}
+.we-are-gamer h1{
+    font-family: Work Sans;
+font-size:3rem;
+font-weight: 700;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.we-are-gamer p{
+    color: #534C64;
+text-align: right;
+font-family: Work Sans;
+font-size: 1.12rem;
+font-weight: 400;
+margin: 20px 0px 20px 0px;
+}
+.unleash{
+    color: #534C64;
+font-family: Work Sans;
+font-size: 1.8rem;
+font-weight: 700;
+line-height: 45px;
+}
+
+
+/* Styles for responsive */
+/* For mobile devices */
+
+@media screen and (max-width:425px) {
+    .header-section {
+        padding: 10px;
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+        width: auto;
+    }
+
+    .menus {
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .follow-us {
+        flex-direction: column;
+    }
+    .banner-section{
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .gamer-section{
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+/* For Tablets */
