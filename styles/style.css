@@ -499,6 +499,7 @@
     .goat-part h1 {
         font-size: 3.5rem;
         text-align: center;
+        margin-bottom: 20px;
     }
 
     .img-para {
@@ -510,7 +511,9 @@
         margin: 0 auto;
         display: flex;
     }
-
+.we-are-gamer h1{
+    margin-right: 30px;
+}
     .we-are-gamer p {
         text-align: center;
         font-size: 1.2rem;
@@ -581,7 +584,9 @@
     }
 
     .career-skills {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 10px;
     }
 
     .career-section h1 {
@@ -602,11 +607,17 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
+.career-section button{
+    margin-left: 60px;
+}
+.career-img img{
+    width: 100%;
+}
     .different-games {
-        width: 90%;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        padding: 0px 20px 0px 20px;
     }
 
     .footer {
@@ -644,9 +655,11 @@
 
 
 /* For Tablets */
+
 @media screen and (min-width:576px) and (max-width:768px) {
     .header-section {
         flex-direction: column;
+        background-color: #fff;
     }
 
     .logo {
@@ -655,7 +668,8 @@
         align-items: center;
         font-size: 2.8rem;
         margin-bottom: 15px;
-        margin-top: 15px;
+        margin-top: 25px;
+        margin-left: 470px;
     }
 
     .logo img {
@@ -676,14 +690,15 @@
         margin-top: 120px;
     }
 
-    .banner-img {
-        width: 100%;
-        height: 100%;
+    .banner-img img{
+        width: 90%;
+        height: 90%;
+        padding: 10px 20px 10px 20px;
     }
 
     .goat-part {
         margin-top: 200px;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         margin: 45px 0 150px 0;
     }
@@ -701,18 +716,23 @@
     .img-para {
         width: 100%;
         margin: 0 auto;
+        margin-top: 20px;
+        padding-left: 150px;
     }
 
     .btn {
         margin: 0 auto;
         display: flex;
+        padding-left: 150px;
     }
-
+    .we-are-gamer h1{
+        text-align: left;
+    }
     .we-are-gamer p {
-        text-align: center;
+        text-align: left;
         font-size: 1.2rem;
+        padding-right: 100px;
     }
-
     .games-funny-videos p {
         padding: 0px 20px 0px 10px;
         text-align: center;
@@ -720,6 +740,7 @@
 
     .games-funny-videos h1 {
         margin-top: 200px;
+        padding-right: 50px;
     }
 
     .videos-section {
@@ -760,10 +781,11 @@
         text-align: center;
     }
 
-    .play-download-img {
-        width: 100%;
-        height: 100%;
+    .play-download-img  img{
+        width: 90%;
+        height: 90%;
         margin: 0 auto;
+        padding-left: 50px;
     }
 
     .career-section {
@@ -807,6 +829,7 @@
 
     .footer .logo {
         margin: 20%;
+        padding-right: 100px;
     }
 
     .footer-options {
